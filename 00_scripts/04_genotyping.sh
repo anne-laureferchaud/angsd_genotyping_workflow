@@ -74,7 +74,7 @@ Geno="-doGeno 2"			# 1: write major and minor
 					#NB geno_maxDepth requires -doCounts
 
 # HWE
-HWE="-HWE_pval 0.000000"
+HWE="-HWE_pval 1"		# by choosing HWE_pval 1, no sites will be filtered but the p-value along with the frequency, and F for the sites will be dumped in .hweF.gz file
 
 # doCounts
 Counts="-doCounts 1"			# (Count the number A,C,G,T. All sites, All samples)
@@ -103,7 +103,7 @@ Counts="-doCounts 1"			# (Count the number A,C,G,T. All sites, All samples)
 	#qfile="-qfile "				# (Only for -iCounts 2)
 	#ffile="-ffile "				 # (Only for -iCounts 2)
 
-# doGL
+# GL
 GL="-GL= 1" 					# 1: SAMtools
 						# 2: GATK
 						# 3: SOAPsnp
